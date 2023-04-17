@@ -2,14 +2,17 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private Animator animator;
+    [SerializeField] public Text stabilityText;
     public float speed;
+    
+    private Animator animator;
     private Vector2 direction;
     private Rigidbody2D rb;
-    
+    private int stability;
     
     // Start is called before the first frame update
     void Start()
@@ -34,11 +37,19 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+
+        stability = 100;
     }
 
     private void FixedUpdate()
     {
         // moving player Up/Down/Left/Right
         rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime); 
+    }
+
+    public void TakeDecreaseStability(int delta)
+    {
+        stability -= delta;
+        stabilityText.text = "Стабильность: " + stability;
     }
 }
