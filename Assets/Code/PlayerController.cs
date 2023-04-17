@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] public Text stabilityText;
     public float speed;
+    public CameraShake cameraShake;
     
     private Animator animator;
     private Vector2 direction;
@@ -51,5 +52,6 @@ public class PlayerController : MonoBehaviour
     {
         stability -= delta;
         stabilityText.text = "Стабильность: " + stability;
+        StartCoroutine(cameraShake.Shake(0.2f, 0.3f));
     }
 }
