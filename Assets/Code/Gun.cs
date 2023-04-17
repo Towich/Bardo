@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    public GameObject bullet;
-    public float offsetDirection;
+    public GameObject bullet; // bullet prefab
+    public float offsetDirection; 
     
     private GameObject player;
     private Vector3 posShot;
