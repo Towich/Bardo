@@ -5,6 +5,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     public Transform playerPos;
+    public GameObject enemy;
 
     private Vector3 posEnd, posSmooth;
     // Start is called before the first frame update
@@ -17,6 +18,12 @@ public class CameraController : MonoBehaviour
     void FixedUpdate()
     {
         SmoothMoveForPlayer();
+
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            Vector3 posToSpawn = new Vector3(playerPos.position.x, playerPos.position.y + 10f, playerPos.position.z);
+            Instantiate(enemy, posToSpawn, Quaternion.identity);
+        }
     }
 
     private void SmoothMoveForPlayer()

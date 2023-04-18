@@ -1,13 +1,14 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
     public int hp;
     public float speed;
-    
+
+    public GameObject effectDeath;
+
+    private SpriteRenderer sr;
     private GameObject player;
     private Transform playerTransform;
     private PlayerController playerController;
@@ -16,13 +17,13 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        sr = GetComponent<SpriteRenderer>();
         player = GameObject.Find("Player");
         playerTransform = player.GetComponent<Transform>();
         playerController = player.GetComponent<PlayerController>();
         
         hp = 100;
         damage = 30;
-        speed = 4f;
     }
 
     // Update is called once per frame
@@ -44,8 +45,23 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    private void OnMouseDown()
+    {
+        Instantiate(effectDeath, transform.position, Quaternion.identity);
+        StartCoroutine(DestroyEnemy());
+    }
+
     public void TakeDamage()
     {
         // something
+    }
+
+    private IEnumerator DestroyEnemy()
+    {
+        //GetComponent<CapsuleCollider2D>().enabled = false;
+        //sr.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        Destroy(gameObject);
+        yield return null;
     }
 }
