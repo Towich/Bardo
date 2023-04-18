@@ -19,7 +19,7 @@ public class CameraController : MonoBehaviour
     {
         SmoothMoveForPlayer();
 
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKey(KeyCode.K))
         {
             Vector3 posToSpawn = new Vector3(playerPos.position.x, playerPos.position.y + 10f, playerPos.position.z);
             Instantiate(enemy, posToSpawn, Quaternion.identity);
