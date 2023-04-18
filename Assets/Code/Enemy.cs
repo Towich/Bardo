@@ -41,11 +41,16 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             playerController.TakeDecreaseStability(damage);
-            Destroy(gameObject);
+            StartDestroyEnemy();
         }
     }
 
     private void OnMouseDown()
+    {
+        StartDestroyEnemy();
+    }
+
+    private void StartDestroyEnemy()
     {
         Instantiate(effectDeath, transform.position, Quaternion.identity);
         StartCoroutine(DestroyEnemy());
@@ -58,8 +63,7 @@ public class Enemy : MonoBehaviour
 
     private IEnumerator DestroyEnemy()
     {
-        //GetComponent<CapsuleCollider2D>().enabled = false;
-        //sr.color = Color.red;
+        sr.color = Color.green;
         yield return new WaitForSeconds(0.1f);
         Destroy(gameObject);
         yield return null;
