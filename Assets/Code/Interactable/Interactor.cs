@@ -16,7 +16,7 @@ public class Interactor : MonoBehaviour
     private readonly Collider2D[] _colliders = new Collider2D[3]; // Interactable objects which interacts with sphere now
     [SerializeField] private int numFound; // num of founded object which interacts with sphere
 
-    private IInteractable showingHintCollider; // object which showing a hint now
+    public IInteractable showingHintCollider; // object which showing a hint now
 
     private void Start()
     {
@@ -31,6 +31,7 @@ public class Interactor : MonoBehaviour
         
         if (numFound > 0) // if Interactable object founded
             CheckFoundedCollider();
+        
         else if (showingHintCollider != null) // if showing hint now
         {
             showingHintCollider.ShowHint(false); // disable showing hint

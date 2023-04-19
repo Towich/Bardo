@@ -17,9 +17,21 @@ public class Chest : MonoBehaviour, IInteractable
 
     public bool Interact(Interactor interactor)
     {
-        Debug.Log("Opening chest!");
-        GetComponent<SpriteRenderer>().color = Color.green;
-        return true;
+        Inventory inventory = interactor.gameObject.GetComponent<Inventory>();
+
+        if (inventory != null && inventory.HasItem(_prompt))
+        {
+            Debug.Log("Opening chest!");
+            GetComponent<SpriteRenderer>().color = Color.green;
+            ShowHint(false);
+            Destroy(this);
+            return true;
+        }
+        else
+        {
+            Debug.Log("NO KEY: " + _prompt);
+        }
+        return false;
     }
 
     public void ShowHint(bool toShow)
