@@ -15,7 +15,11 @@ public class DeadBody : MonoBehaviour, IInteractable
     }
     public bool Interact(Interactor interactor)
     {
-        Debug.Log("Looting the dead body!");
+        //Debug.Log("Looting the dead body!");
+
+        PlayerController pc = interactor.gameObject.GetComponent<PlayerController>();
+        pc.TakeDecreaseStability(10);
+        
         GetComponent<SpriteRenderer>().color = Color.gray;
         ShowHint(false);
         Destroy(this);
