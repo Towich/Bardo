@@ -27,10 +27,8 @@ public class Chest : MonoBehaviour, IInteractable
             Destroy(this);
             return true;
         }
-        else
-        {
-            Debug.Log("NO KEY: " + _prompt);
-        }
+        
+        Debug.Log("NO KEY: " + _prompt);
         return false;
     }
 
