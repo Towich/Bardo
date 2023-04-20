@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cfb4c1584a83b994f943539940f4ed00
+guid: fe8ba4d26df16ad41a55e8ed42396296
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,97 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: samll_objects_1_5
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 103
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a5a4ec379034c743bbd6ba4c38f2d4c
-      internalID: 314444706
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_6
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 103
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6762cbb198f658748bc718fe6ffa5388
-      internalID: -205774367
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_7
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 103
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fcdf885794784d842992f93a015d6846
-      internalID: -2017131776
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_8
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 103
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4cd351d1877f3b540832b99b46dbe63d
-      internalID: 1557457288
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_9
+      name: OR
       rect:
         serializedVersion: 2
         x: 176
-        y: 103
-        width: 16
-        height: 16
+        y: 144
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,230 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d33afce9da57bf429319748452518e4
-      internalID: 844987489
+      spriteID: 89a180cf6bed8404684ae81c892fec62
+      internalID: -373141272
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: samll_objects_1_12
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 87
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ac15f05badbeee4bb8239280a202c3e
-      internalID: 277857851
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_13
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 87
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5baf73dd3b51bc4fb6e9a45f6021998
-      internalID: 504370426
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_14
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 87
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 005eb1db7998eb543af021012db8473b
-      internalID: -799203270
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_15
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 87
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7566390a57daae469121069bce5ec0d
-      internalID: 947226924
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_16
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 87
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 30c4a552168bc5b4c9e23f9ab8ed2854
-      internalID: -1225199625
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_17
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 87
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5beba631cf2a13449b45a2cfbe107271
-      internalID: 1657653668
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_23
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 55
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f951ef7269c717a49986b5e9b550d09f
-      internalID: 958182527
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_24
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 55
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 41a6788feca2d074dbaafc9bf2a4f13e
-      internalID: 1499728996
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_25
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 55
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 84b581625796c074685b65615fc75f64
-      internalID: -1286484181
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_26
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 55
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 542ad5c8026bb1f4e841d9a4d9d532c3
-      internalID: -2068640555
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_27
+      name: AND
       rect:
         serializedVersion: 2
         x: 192
-        y: 55
-        width: 16
-        height: 16
+        y: 144
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de915b70e6dd90a40bcd95c819d91e34
-      internalID: -1213811222
+      spriteID: 38d3d99878911114f887aa6e5c9d9eda
+      internalID: -1423311450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: samll_objects_1_30
+      name: NOT
       rect:
         serializedVersion: 2
-        x: 80
-        y: 39
-        width: 16
-        height: 32
+        x: 184
+        y: 134
+        width: 5
+        height: 4
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,83 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a713ff8e4040b34b84064470e69c19f
-      internalID: 302945093
+      spriteID: c18967404f8a3af4e9a1bb6060f42f0c
+      internalID: -423651864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: samll_objects_1_31
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 39
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7473e4430b9d3d546bc2426619cb9111
-      internalID: -906828970
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_32
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 39
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ad20d9d998897840811883e7055ae5d
-      internalID: 1671170778
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_33
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 39
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f06a3b176f63e734eb6c98c9c6c30c41
-      internalID: 533745584
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_34
+      name: FINAL_0
       rect:
         serializedVersion: 2
         x: 176
-        y: 39
-        width: 16
-        height: 16
+        y: 112
+        width: 5
+        height: 5
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -562,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25d548319523f8a4290540c55fac2d0c
-      internalID: -1942483276
+      spriteID: e745e2f51a85e2440b5f771699acf706
+      internalID: -603535818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: samll_objects_1_35
+      name: FINAL_1
       rect:
         serializedVersion: 2
         x: 192
-        y: 39
-        width: 16
-        height: 16
+        y: 112
+        width: 5
+        height: 5
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -583,20 +226,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f753576c9d7748f41bb1892a12576f14
-      internalID: -1461442054
+      spriteID: 8cd3f5e9c1b2ed44f8628109f51917ab
+      internalID: 1440714224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: samll_objects_1_36
+      name: UI
       rect:
         serializedVersion: 2
-        x: 145
-        y: 18
-        width: 16
-        height: 16
+        x: 228
+        y: 80
+        width: 144
+        height: 92
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -604,188 +247,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f4172460e3e497429f76d35cfad5f59
-      internalID: 714991922
+      spriteID: 251bee8ade7f66040bc19367d24a5b48
+      internalID: 1092956546
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: samll_objects_1_37
+      name: headbreaking1_0
       rect:
         serializedVersion: 2
-        x: 161
-        y: 18
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae7c7953c51d5ce45a65ee8db1cf6b3e
-      internalID: -2140858056
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_38
-      rect:
-        serializedVersion: 2
-        x: 173
-        y: 18
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b6910ea0d045bb4980933fb3b213816
-      internalID: -1409686086
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_39
-      rect:
-        serializedVersion: 2
-        x: 189
-        y: 18
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e451d9760c0499418146d654b4dd216
-      internalID: 1927177705
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_40
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 7
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bf2b9a5f0868c2243b37c2c8da9b2b9e
-      internalID: 2077129241
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_41
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 7
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 64f9a4ca4bc33ac48888e7d613da890f
-      internalID: 774489948
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_42
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 7
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da1926e619516ab4a9467342cd22a9c3
-      internalID: -24210730
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_43
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 7
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 056c3860712cd8b45badb8f108cded47
-      internalID: 2101881139
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_44
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 7
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 68123787330468e4d9a97ff6cf9e971e
-      internalID: -82198115
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_0
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 39
+        x: 16
+        y: 160
         width: 32
-        height: 32
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -793,8 +268,617 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce9d89713f08ee341a2eaaef3e4ff5db
-      internalID: 1344804979
+      spriteID: 058a15c36aaf9f54f99a6b2d0eb2a938
+      internalID: 1073295943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51bd756c6bebf1849b0ee4982f459754
+      internalID: -2141612760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 111
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507268d10ca8ccf47a2b2de3ce00cca1
+      internalID: -256384818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_3
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 111
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e70df566daa83f4bb2598df28d2e9b3
+      internalID: 1527611506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 34
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a642b0086db80ec4893aabbfe77f0431
+      internalID: -558990350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 34
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc610d91a3c6b640af5f6c5233653ac
+      internalID: -1820810887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_6
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 31
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b08ba614d405b4f8ff0be9a2c0a445
+      internalID: 1306214147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_7
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 80
+        width: 31
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fe88a9adb9871742b77fefdf6b51ea8
+      internalID: 1056635373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_8
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 166
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb86ea7c89f148a488de627d7b28d19e
+      internalID: 2096775009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 166
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a98ccc4c4a6e9499310eb3b55b4546
+      internalID: 1609539521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_10
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 140
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbca520229744a04792c4c593773185e
+      internalID: -774378123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_11
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 140
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1e101d8f3d64040bd59747c7332d25
+      internalID: 737039458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_12
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 109
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6279e830e12d94d8a0a8abd288eea8
+      internalID: 957272681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_13
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 110
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c7cb0fd987e4a44d8a674b8ba2abbd5
+      internalID: -102170970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_14
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 144
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1831403104de82b48833d83399ac464a
+      internalID: 1533709428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_15
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 144
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f9059ac34b539144b7541e3e749596a
+      internalID: -1476495342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_16
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 179
+        width: 1
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0376415e45a434fa255a0ce6be897b
+      internalID: 616527176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_17
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 176
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa42c9a4d2e237478cca3262b6b66fe
+      internalID: -78935488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_18
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 176
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40618d0c111bde47b6e2f39f605b3ad
+      internalID: 253962212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_19
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 160
+        width: 30
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b26c3b3eb569431478491582002d78bc
+      internalID: 1291591175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_20
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 144
+        width: 30
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a57c63ddb56d945aa0ba731c10c336
+      internalID: -429840682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_21
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 176
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb6d0de1e1bec154ebcad8d30d4521f7
+      internalID: -1778142082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_22
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 176
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ca9748046ac19418c0a700e07b55e9
+      internalID: 1184914904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_23
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 79
+        width: 74
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f55a44d34f89e4c9041f6993d8caea
+      internalID: 709810757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_24
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 69
+        width: 19
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b8130a1b0d0e644a54640ed4226321
+      internalID: -643352329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_25
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 69
+        width: 19
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136f27823619df8418037962e14f2ada
+      internalID: 699399749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_26
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 27
+        width: 57
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad6b61ca8f0e034482f2cce389f55eb
+      internalID: 938755181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_27
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 26
+        width: 57
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5ec4ae819b36f49b0ca6ff49a9a233
+      internalID: -1124595430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_28
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 179
+        width: 1
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b2ef39420c797f43b49a303484e00b5
+      internalID: 245079997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: headbreaking1_29
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 130
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9d83a042a0f6784a880b55963867b0e
+      internalID: -736088976
       vertices: []
       indices: 
       edges: []
@@ -810,55 +894,42 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      samll_objects_1_3: -1969109982
-      samll_objects_1_32: 1671170778
-      samll_objects_1_16: -1225199625
-      samll_objects_1_25: -1286484181
-      samll_objects_1_9: 844987489
-      samll_objects_1_48: -779693544
-      samll_objects_1_28: 105235089
-      samll_objects_1_34: -1942483276
-      samll_objects_1_29: -884349902
-      samll_objects_1_12: 277857851
-      samll_objects_1_11: -1325052685
-      samll_objects_1_17: 1657653668
-      samll_objects_1_42: -24210730
-      samll_objects_1_0: 1344804979
-      samll_objects_1_10: 1873919017
-      samll_objects_1_41: 774489948
-      samll_objects_1_31: -906828970
-      samll_objects_1_47: 1882346421
-      samll_objects_1_22: 1175978839
-      samll_objects_1_46: 702122894
-      samll_objects_1_18: -1634591132
-      samll_objects_1_38: -1409686086
-      samll_objects_1_7: -2017131776
-      samll_objects_1_13: 504370426
-      samll_objects_1_40: 2077129241
-      samll_objects_1_44: -82198115
-      samll_objects_1_45: -735861841
-      samll_objects_1_2: 1878901517
-      samll_objects_1_27: -1213811222
-      samll_objects_1_35: -1461442054
-      samll_objects_1_15: 947226924
-      samll_objects_1_1: -579384146
-      samll_objects_1_37: -2140858056
-      samll_objects_1_33: 533745584
-      samll_objects_1_8: 1557457288
-      samll_objects_1_30: 302945093
-      samll_objects_1_39: 1927177705
-      samll_objects_1_20: -1201714372
-      samll_objects_1_23: 958182527
-      samll_objects_1_26: -2068640555
-      samll_objects_1_4: -1750575724
-      samll_objects_1_43: 2101881139
-      samll_objects_1_21: -1925465189
-      samll_objects_1_6: -205774367
-      samll_objects_1_19: -531636972
-      samll_objects_1_5: 314444706
-      samll_objects_1_24: 1499728996
-      samll_objects_1_14: -799203270
-      samll_objects_1_36: 714991922
+      headbreaking1_2: -256384818
+      headbreaking1_22: 1184914904
+      headbreaking1_25: 699399749
+      OR: -373141272
+      headbreaking1_24: -643352329
+      headbreaking1_4: -558990350
+      headbreaking1_1: -2141612760
+      headbreaking1_21: -1778142082
+      headbreaking1_7: 1056635373
+      headbreaking1_23: 709810757
+      headbreaking1_12: 957272681
+      headbreaking1_14: 1533709428
+      NOT: -423651864
+      AND: -1423311450
+      headbreaking1_0: 1073295943
+      headbreaking1_19: 1291591175
+      headbreaking1_10: -774378123
+      headbreaking1_20: -429840682
+      headbreaking1_3: 1527611506
+      headbreaking1_16: 616527176
+      headbreaking1_27: -1124595430
+      headbreaking1_8: 2096775009
+      headbreaking1_15: -1476495342
+      headbreaking1_13: -102170970
+      headbreaking1_11: 737039458
+      FINAL_1: 1440714224
+      headbreaking1_9: 1609539521
+      FINAL_0: -603535818
+      headbreaking1_5: -1820810887
+      headbreaking1_6: 1306214147
+      headbreaking1_17: -78935488
+      headbreaking1_28: 245079997
+      headbreaking1_26: 938755181
+      UI: 1073295943
+      headbreaking1_29: -736088976
+      headbreaking1_18: 253962212
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
