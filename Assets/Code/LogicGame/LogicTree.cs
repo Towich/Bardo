@@ -4,12 +4,7 @@ using UnityEngine;
 public class LogicTree : MonoBehaviour
 {
     public LogicElem[] rootNodes;
-
-    private void Start()
-    {
-        UpdateAllTree();
-    }
-
+    
     public void UpdateAllTree()
     {
         foreach (var rootNode in rootNodes)

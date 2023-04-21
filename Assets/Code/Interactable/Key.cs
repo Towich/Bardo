@@ -5,6 +5,7 @@ public class Key : MonoBehaviour, IInteractable
 {
     [SerializeField] private string _prompt;
     public string InteractionPrompt { get; }
+    public GameObject prefabUI;
     
     private Canvas canvasHint;
 
@@ -21,7 +22,7 @@ public class Key : MonoBehaviour, IInteractable
         if (inventory != null)
         {
             Debug.Log("Added " + _prompt + "!");
-            inventory.AddItem(_prompt);
+            inventory.AddItem(prefabUI);
             Destroy(gameObject);
             return true;
         }
