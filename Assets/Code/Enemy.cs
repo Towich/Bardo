@@ -14,6 +14,9 @@ public class Enemy : MonoBehaviour
     private PlayerController playerController;
     private int damage;
     
+    private Animator animator;
+    private Vector2 direction;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +24,7 @@ public class Enemy : MonoBehaviour
         player = GameObject.Find("Player");
         playerTransform = player.GetComponent<Transform>();
         playerController = player.GetComponent<PlayerController>();
+        animator = GetComponent<Animator>();
         
         hp = 100;
         damage = 30;
@@ -29,6 +33,14 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        direction = (playerTransform.position - transform.position).normalized;
+        
+        // Setting the variables in Animator
+        // used for playing animation of walk in right direction
+        animator.SetFloat("Horizontal", direction.x);
+        animator.SetFloat("Vertical", direction.y);
+        animator.SetFloat("Speed", direction.sqrMagnitude);
+        
         transform.position = Vector2.MoveTowards(
             transform.position, 
             playerTransform.position, 

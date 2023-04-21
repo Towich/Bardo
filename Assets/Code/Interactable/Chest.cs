@@ -10,12 +10,11 @@ public class Chest : MonoBehaviour, IInteractable
     public GameObject prefabUI;
 
     private Canvas canvasHint;
-    private Animator anim;
+    public Animator anim;
 
     private void Start()
     {
         canvasHint = GetComponentInChildren<Canvas>();
-        anim = GetComponentInChildren<Animator>();
         canvasHint.enabled = false;
     }
 
