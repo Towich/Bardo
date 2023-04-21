@@ -680,6 +680,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7385588321808074948, guid: 08718a5ed60b7e24da683a3d831cc9c8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7385588321808074950, guid: 08718a5ed60b7e24da683a3d831cc9c8, type: 3}
       propertyPath: m_SortingOrder
       value: 15

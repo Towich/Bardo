@@ -39,6 +39,7 @@ public class Plane : MonoBehaviour, IInteractable
 
     public void ClosePlaneUI()
     {
+        outputCraftText.text = "";
         planeUI.SetActive(false);
         playerController.enabled = true;
     }
