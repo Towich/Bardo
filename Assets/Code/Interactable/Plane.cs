@@ -1,12 +1,17 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class Plane : MonoBehaviour, IInteractable
 {
     public string InteractionPrompt { get; }
+
+    public GameObject prefabBuildTool;
     
+    public Inventory inventory;
     public GameObject planeUI;
     public GameObject mapUI;
     public GameObject craftUI;
+    public Text outputCraftText;
     
     private Canvas canvasHint;
     private PlayerController playerController;
@@ -46,7 +51,23 @@ public class Plane : MonoBehaviour, IInteractable
     
     public void OpenCraftUI()
     {
+        outputCraftText.text = "";
         mapUI.SetActive(false);
         craftUI.SetActive(true);
+    }
+
+    public void Craft()
+    {
+        bool crafted = inventory.CraftBuildTool(prefabBuildTool);
+        if (crafted)
+        {
+            outputCraftText.text = "Удачно!";
+            outputCraftText.color = Color.green;
+        }
+        else
+        {
+            outputCraftText.text = "Не удачно!";
+            outputCraftText.color = Color.red;
+        }
     }
 }

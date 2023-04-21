@@ -55,4 +55,17 @@ public class Inventory : MonoBehaviour
             items[i].transform.localPosition = new Vector3(pos.x, -70 * i, pos.z);
         }
     }
+
+    public bool CraftBuildTool(GameObject prefabBuildTool)
+    {
+        if (HasItem("Ядро жесткого света") && HasItem("Универсальная преобразуемая основа"))
+        {
+            RemoveItem("Ядро жесткого света");
+            RemoveItem("Универсальная преобразуемая основа");
+            AddItem(prefabBuildTool);
+            return true;
+        }
+
+        return false;
+    }
 }
