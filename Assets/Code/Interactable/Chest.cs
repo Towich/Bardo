@@ -38,10 +38,12 @@ public class Chest : MonoBehaviour, IInteractable
     private IEnumerator LootingChest(Inventory inventory, PlayerController pl)
     {
         anim.Play("PressingE");
+        pl.TurnMovement(false);
         pl.enabled = false;
         
         yield return new WaitForSeconds(2.5f);
-        
+
+        pl.TurnMovement(true);
         pl.enabled = true;
         GetComponent<SpriteRenderer>().color = Color.green;
         inventory.AddItem(prefabUI);    // adding item "RandomItem"

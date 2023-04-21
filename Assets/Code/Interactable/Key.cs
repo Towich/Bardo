@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using System.Collections;
 
 public class Key : MonoBehaviour, IInteractable
 {
@@ -8,9 +9,11 @@ public class Key : MonoBehaviour, IInteractable
     public GameObject prefabUI;
     
     private Canvas canvasHint;
+    private Animator anim;
 
     private void Start()
     {
+        anim = GetComponentInChildren<Animator>();
         canvasHint = GetComponentInChildren<Canvas>();
         canvasHint.enabled = false;
     }
@@ -18,12 +21,14 @@ public class Key : MonoBehaviour, IInteractable
     public bool Interact(Interactor interactor)
     {
         Inventory inventory = interactor.gameObject.GetComponent<Inventory>();
+        PlayerController pl = interactor.gameObject.GetComponent<PlayerController>();
 
         if (inventory != null)
         {
             Debug.Log("Added " + _prompt + "!");
-            inventory.AddItem(prefabUI);
-            Destroy(gameObject);
+
+            StartCoroutine(LootingKey(inventory, pl));
+            
             return true;
         }
 
@@ -34,5 +39,19 @@ public class Key : MonoBehaviour, IInteractable
     {
         if(canvasHint != null)
             canvasHint.enabled = toShow;
+    }
+    
+    private IEnumerator LootingKey(Inventory inventory, PlayerController pl)
+    {
+        anim.Play("PressingE");
+        pl.TurnMovement(false);
+        pl.enabled = false;
+        
+        yield return new WaitForSeconds(2.5f);
+
+        pl.TurnMovement(true);
+        pl.enabled = true;
+        inventory.AddItem(prefabUI);    // adding item
+        Destroy(gameObject);
     }
 }
