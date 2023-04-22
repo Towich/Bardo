@@ -22,10 +22,11 @@ public class Lift : MonoBehaviour, IInteractable
         Inventory inventory = interactor.gameObject.GetComponent<Inventory>();
         PlayerController pl = interactor.gameObject.GetComponent<PlayerController>();
 
-        if (inventory != null && inventory.HasItem(_prompt))
+        if (_prompt.Equals("opened") || (inventory != null && inventory.HasItem(_prompt)))
         {
             Debug.Log("Opening lift!");
             StartCoroutine(OpeningLift(inventory, pl));
+            _prompt = "opened";
             return true;
         }
         

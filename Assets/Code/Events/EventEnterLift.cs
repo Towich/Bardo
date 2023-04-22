@@ -8,12 +8,10 @@ public class EventEnterLift : MonoBehaviour
     [SerializeField] private bool goingToHospital;
     public Animator BlackBackgroundAnimator;
     public Animator coolBackground;
-
-    public Vector3 posMain;
+    
     private Vector3 posMiddle;
-    public Vector3 posHospital;
-
-
+    private Vector3 posHospital;
+    
     public PlayerController player;
     private Transform playerTransform;
     public Animator liftAnimator;
@@ -73,6 +71,7 @@ public class EventEnterLift : MonoBehaviour
         yield return new WaitForSeconds(3f);
         
         // #5 Teleport to Hospital + Turning off BlackBackground
+        posHospital = new Vector3(playerTransform.position.x, playerTransform.position.y - 2*distanceMain_Middle, playerTransform.position.z);
         playerTransform.position = posHospital;
         cameraTransform.position = posHospital;
         BlackBackgroundAnimator.Play("BlackBackgroundOff");
