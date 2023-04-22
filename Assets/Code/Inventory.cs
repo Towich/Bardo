@@ -47,7 +47,7 @@ public class Inventory : MonoBehaviour
     {
         for (int i = 0; i < items.Count; i++)
         {
-            var pos = items[i].transform.localPosition;
+            var pos = new Vector3(-233.5f, 6.4f, 0f);
             items[i].transform.localPosition = new Vector3(pos.x + 117f * i, pos.y, pos.z);
         }
     }
