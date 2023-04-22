@@ -7,11 +7,7 @@ public class Inventory : MonoBehaviour
     public GameObject inventoryUI;
 
     public List<Item> items;
-
-    private void Start()
-    {
-        items = new List<Item>(5);
-    }
+    
 
     public void AddItem(GameObject prefabItemUI)
     {

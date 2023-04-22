@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
         StopAllCoroutines();
         stability -= delta;
         gameManager.UpdateStability(stability);
-        stabilityText.text = "Стабильность: " + stability;
+        stabilityText.text = stability.ToString();
         StartCoroutine(cameraShake.Shake(duration, magnitude));
         StartCoroutine(glitchEffect.SmoothTransition());
     }

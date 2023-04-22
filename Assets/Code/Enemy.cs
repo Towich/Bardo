@@ -27,7 +27,7 @@ public class Enemy : MonoBehaviour
         animator = GetComponent<Animator>();
         
         hp = 100;
-        damage = 30;
+        damage = 5;
     }
 
     // Update is called once per frame
