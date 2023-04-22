@@ -10,7 +10,8 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public CameraShake cameraShake;
     public PostGlitchEffect glitchEffect;
-    
+
+    private GameManager gameManager;
     private Animator animator;
     private Vector2 direction;
     private Rigidbody2D rb;
@@ -29,6 +30,7 @@ public class PlayerController : MonoBehaviour
         enabledMovement = true;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 
         stability = 100;
     }
@@ -57,6 +59,7 @@ public class PlayerController : MonoBehaviour
         // 0.2f + 0.3f
         StopAllCoroutines();
         stability -= delta;
+        gameManager.UpdateStability(stability);
         stabilityText.text = "Стабильность: " + stability;
         StartCoroutine(cameraShake.Shake(duration, magnitude));
         StartCoroutine(glitchEffect.SmoothTransition());

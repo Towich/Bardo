@@ -16,7 +16,7 @@ public class Inventory : MonoBehaviour
     public void AddItem(GameObject prefabItemUI)
     {
         GameObject newItem = Instantiate(prefabItemUI, inventoryUI.transform);
-        newItem.transform.localPosition = Vector3.zero;
+        newItem.transform.localPosition = new Vector3(-233.5f, 6.4f, 0f);
         items.Add(newItem.GetComponent<Item>());
         UpdateItemList();
     }
@@ -52,7 +52,7 @@ public class Inventory : MonoBehaviour
         for (int i = 0; i < items.Count; i++)
         {
             var pos = items[i].transform.localPosition;
-            items[i].transform.localPosition = new Vector3(pos.x, -70 * i, pos.z);
+            items[i].transform.localPosition = new Vector3(pos.x + 117f * i, pos.y, pos.z);
         }
     }
 
