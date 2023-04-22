@@ -8,6 +8,7 @@ public class LogicTree : MonoBehaviour
     public LogicElem[] logicElems;
 
     public LogicElem finalElem;
+    public GameObject doorToStorage;
     
     public void UpdateAllTree()
     {
@@ -74,5 +75,8 @@ public class LogicTree : MonoBehaviour
         {
             elem.GetComponent<Button>().interactable = false;
         }
+
+        //doorToStorage.GetComponent<BoxCollider2D>().enabled = false;
+        doorToStorage.GetComponent<Animator>().Play("OpenDoor");
     }
 }

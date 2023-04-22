@@ -9,11 +9,10 @@ public class Key : MonoBehaviour, IInteractable
     public GameObject prefabUI;
     
     private Canvas canvasHint;
-    private Animator anim;
+    public Animator anim;
 
     private void Start()
     {
-        anim = GetComponentInChildren<Animator>();
         canvasHint = GetComponentInChildren<Canvas>();
         canvasHint.enabled = false;
     }
