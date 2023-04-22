@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    public GameManager gameManager;
+    public PlayerController playerController;
     public Transform playerPos;
     public GameObject enemy;
 
@@ -11,7 +13,7 @@ public class CameraController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -33,5 +35,16 @@ public class CameraController : MonoBehaviour
         posSmooth = Vector3.Lerp(transform.position, posEnd, 0.125f);
         
         transform.position = posSmooth;
+    }
+    
+    public void StopScaryCamera()
+    {
+        GetComponent<Animator>().enabled = false;
+        
+        playerController.enabled = true;
+        playerController.TurnMovement(true);
+        
+        playerController.TakeDecreaseStability(10, 1f, 0.5f);
+        gameManager.ScaryMomentSpawnEnemy();
     }
 }

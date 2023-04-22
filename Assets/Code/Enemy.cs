@@ -52,7 +52,7 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            playerController.TakeDecreaseStability(damage);
+            playerController.TakeDecreaseStability(damage, 0.2f, 0.3f);
             StartDestroyEnemy();
         }
     }

@@ -126,7 +126,217 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: bloodloot_1
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 108
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42b19bab3c05b24d9add4aaa217c80e
+      internalID: -1291929138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodloot_2
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 104
+        width: 43
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be833b1ed2e927b44b97a31a906a3538
+      internalID: -554936289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodloot_4
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 82
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 552a107ffca817b45aee61be6b9ae9fa
+      internalID: 1224263921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodloot_5
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 70
+        width: 43
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f19421c5dd91184c88c7e2f35db61cc
+      internalID: -1392130668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodloot_6
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 46
+        width: 33
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b658440106c384c9bf6417f2d964a8
+      internalID: -110883628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodloot_7
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a4c0fcb541f0c41acd83d9b5f85ec7
+      internalID: 39384212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodloot_8
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 46
+        width: 40
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 788d125bf83e37a4f9abbc448e57624c
+      internalID: 1679780087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodloot_9
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 12
+        width: 33
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c8468ed776aee41a9f80b451cdb549
+      internalID: -600752798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodloot_10
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 14
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96bd594c89b4a074f92e7c269042d141
+      internalID: 1157724279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodloot_11
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 11
+        width: 40
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f623de61810c44c9b62a1e49854a8b
+      internalID: 1926568269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -137,7 +347,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bloodloot_4: 1224263921
+      bloodloot_10: 1157724279
+      bloodloot_9: -600752798
+      bloodloot_11: 1926568269
+      bloodloot_5: -1392130668
+      bloodloot_6: -110883628
+      bloodloot_2: -554936289
+      bloodloot_1: -1291929138
+      bloodloot_7: 39384212
+      bloodloot_8: 1679780087
+      bloodloot_0: 145888648
+      bloodloot_3: -182592775
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

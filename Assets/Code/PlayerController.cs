@@ -52,12 +52,13 @@ public class PlayerController : MonoBehaviour
         rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime); 
     }
 
-    public void TakeDecreaseStability(int delta)
+    public void TakeDecreaseStability(int delta, float duration, float magnitude)
     {
+        // 0.2f + 0.3f
         StopAllCoroutines();
         stability -= delta;
         stabilityText.text = "Стабильность: " + stability;
-        StartCoroutine(cameraShake.Shake(0.2f, 0.3f));
+        StartCoroutine(cameraShake.Shake(duration, magnitude));
         StartCoroutine(glitchEffect.SmoothTransition());
     }
 
