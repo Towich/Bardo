@@ -50,7 +50,16 @@ public class Key : MonoBehaviour, IInteractable
 
         pl.TurnMovement(true);
         pl.enabled = true;
-        inventory.AddItem(prefabUI);    // adding item
+
+        if (_prompt.Equals("Stabilizator"))
+        {
+            pl.TakeDecreaseStability(-30, 0.1f, 0.1f);
+        }
+        else
+        {
+            inventory.AddItem(prefabUI);    // adding item key
+        }
+        
         Destroy(gameObject);
     }
 }

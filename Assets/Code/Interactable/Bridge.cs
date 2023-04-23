@@ -23,7 +23,7 @@ public class Bridge : MonoBehaviour, IInteractable
         PlayerController pl = interactor.GetComponent<PlayerController>();
 
         if (inv) {
-            if (inv.HasItem("Универсальный строительный инструмент"))
+            if (inv.HasItem("UIFO"))
             {
                 Debug.Log("Building the bridge!");
 
@@ -35,7 +35,7 @@ public class Bridge : MonoBehaviour, IInteractable
             }
             else
             {
-                // we don't have "Универсальный строительный инструмент"
+                // we don't have "UIFO"
                 return false;
             }
         }

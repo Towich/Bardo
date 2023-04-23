@@ -5,6 +5,8 @@ using UnityEngine;
 public class DeadBody : MonoBehaviour, IInteractable
 {
     [SerializeField] private GameObject prefabUI;
+    [SerializeField] private GameObject prefabDialogueUI;
+    public GameObject dialogueParent;
     public string InteractionPrompt { get; }
     
     private Canvas canvasHint;
@@ -41,12 +43,19 @@ public class DeadBody : MonoBehaviour, IInteractable
         
         yield return new WaitForSeconds(2.5f);
 
-        pl.TurnMovement(true);
-        pl.enabled = true;
+        ShowDialogue();
+        
+        //pl.enabled = true;
         pl.TakeDecreaseStability(10, 0.2f, 0.3f);
         GetComponent<SpriteRenderer>().color = Color.gray;
         inventory.AddItem(prefabUI);    // adding item
         ShowHint(false);
         Destroy(this);
+    }
+
+    private void ShowDialogue()
+    {
+        dialogueParent.SetActive(true);
+        Instantiate(prefabDialogueUI, dialogueParent.transform);
     }
 }

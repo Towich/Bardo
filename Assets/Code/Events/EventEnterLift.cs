@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EventEnterLift : MonoBehaviour
 {
-    [SerializeField] private bool goingToHospital;
+    [SerializeField] private bool goingToMain;
     public Animator BlackBackgroundAnimator;
     public Animator coolBackground;
     
@@ -22,21 +22,32 @@ public class EventEnterLift : MonoBehaviour
     public GameObject inventoryUI;
     
     public SpriteRenderer liftDoorSpriteRenderer;
+    public SpriteRenderer lift2DoorSpriteRenderer;
     private int startSortingOrder;
+    private int start2SortingOrder;
 
     private float distanceMain_Middle = 20f;
+    public GameObject stabilizator;
 
     private void Start()
     {
         playerTransform = player.GetComponent<Transform>();
         startSortingOrder = liftDoorSpriteRenderer.sortingOrder;
+        start2SortingOrder = lift2DoorSpriteRenderer.sortingOrder;
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            StartCoroutine(StartLiftEvent());
+            if (goingToMain && !stabilizator)
+            {
+                StartCoroutine(StartLiftEvent());
+            }
+            else if (!goingToMain && stabilizator)
+            {
+                StartCoroutine(StartLiftEvent());
+            }
         }
     }
 
@@ -46,6 +57,7 @@ public class EventEnterLift : MonoBehaviour
         liftAnimator.Play("LiftClose");
         BlackBackgroundAnimator.Play("BlackBackgroundOn");
         liftDoorSpriteRenderer.sortingOrder = 2;
+        lift2DoorSpriteRenderer.sortingOrder = 2;
         
         yield return new WaitForSeconds(5f);
         
@@ -53,7 +65,9 @@ public class EventEnterLift : MonoBehaviour
         stabilityUI.SetActive(false);
         inventoryUI.SetActive(false);
 
-        posMiddle = new Vector3(playerTransform.position.x, playerTransform.position.y - distanceMain_Middle, playerTransform.position.z);
+        float localDistance = goingToMain ? -2f * distanceMain_Middle : distanceMain_Middle;
+        
+        posMiddle = new Vector3(playerTransform.position.x, playerTransform.position.y - localDistance, playerTransform.position.z);
         
         playerTransform.position = posMiddle;
         cameraTransform.position = posMiddle;
@@ -62,24 +76,38 @@ public class EventEnterLift : MonoBehaviour
         
         // #3 Showing CoolBackground
         BlackBackgroundAnimator.Play("BlackBackgroundOff");
-        coolBackground.Play("CoolBackgroundUp");
-        
+
+        coolBackground.Play(!goingToMain ? "CoolBackgroundUp" : "CoolBackgroundDown");
+
         yield return new WaitForSeconds(10f);
         
         // #4 Showing BlackBackground
         BlackBackgroundAnimator.Play("BlackBackgroundOn");
+        lift2DoorSpriteRenderer.sortingOrder = 2;
+        
         yield return new WaitForSeconds(3f);
         
         // #5 Teleport to Hospital + Turning off BlackBackground
-        posHospital = new Vector3(playerTransform.position.x, playerTransform.position.y - 2*distanceMain_Middle, playerTransform.position.z);
+
+        localDistance = goingToMain ? -1f * distanceMain_Middle : 2f * distanceMain_Middle;
+        posHospital = new Vector3(playerTransform.position.x, playerTransform.position.y - localDistance, playerTransform.position.z);
         playerTransform.position = posHospital;
         cameraTransform.position = posHospital;
         BlackBackgroundAnimator.Play("BlackBackgroundOff");
-        liftDoorSpriteRenderer.sortingOrder = startSortingOrder;
+        
         stabilityUI.SetActive(true);
         inventoryUI.SetActive(true);
         
         yield return new WaitForSeconds(3f);
+        
+        liftDoorSpriteRenderer.sortingOrder = startSortingOrder;
+        
+        if(goingToMain)
+            lift2DoorSpriteRenderer.sortingOrder = 29;
+        else
+        {
+            lift2DoorSpriteRenderer.sortingOrder = 90;
+        }
         
         // #6 Open lift2 door
         lift2Animator.Play("LiftOpen");

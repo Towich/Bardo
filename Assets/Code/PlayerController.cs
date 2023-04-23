@@ -33,6 +33,8 @@ public class PlayerController : MonoBehaviour
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 
         stability = 100;
+
+        enabled = false;
     }
     
     // Update is called once per frame
@@ -59,6 +61,10 @@ public class PlayerController : MonoBehaviour
         // 0.2f + 0.3f
         StopAllCoroutines();
         stability -= delta;
+
+        if (stability > 100)
+            stability = 100;
+        
         gameManager.UpdateStability(stability);
         stabilityText.text = stability.ToString();
         StartCoroutine(cameraShake.Shake(duration, magnitude));
@@ -67,6 +73,17 @@ public class PlayerController : MonoBehaviour
 
     public void TurnMovement(bool toEnable)
     {
-        animator.enabled = toEnable;
+        if (toEnable)
+        {
+            animator.enabled = toEnable;
+            animator.Play("Idle");
+        }
+        else
+        {
+            animator.Play("Idle");
+            animator.enabled = toEnable;
+        }
+        
+        
     }
 }

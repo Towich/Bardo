@@ -13,8 +13,16 @@ public class Lift : MonoBehaviour, IInteractable
 
     private void Start()
     {
-        canvasHint = GetComponentInChildren<Canvas>();
-        canvasHint.enabled = false;
+        if (_prompt.Equals("opened"))
+        {
+            
+        }
+        else
+        {
+            canvasHint = GetComponentInChildren<Canvas>();
+            canvasHint.enabled = false;
+        }
+        
     }
 
     public bool Interact(Interactor interactor)
