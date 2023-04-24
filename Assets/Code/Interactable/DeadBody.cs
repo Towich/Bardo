@@ -46,7 +46,7 @@ public class DeadBody : MonoBehaviour, IInteractable
         ShowDialogue();
         
         //pl.enabled = true;
-        pl.TakeDecreaseStability(10, 0.2f, 0.3f);
+        pl.TakeDecreaseStability(5, 0.2f, 0.3f);
         GetComponent<SpriteRenderer>().color = Color.gray;
         inventory.AddItem(prefabUI);    // adding item
         ShowHint(false);

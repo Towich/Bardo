@@ -8,7 +8,10 @@ public class EventEnterLift : MonoBehaviour
     [SerializeField] private bool goingToMain;
     public Animator BlackBackgroundAnimator;
     public Animator coolBackground;
-    
+
+    public Transform dialogueParent;
+    public GameObject dialoguePrefab;
+
     private Vector3 posMiddle;
     private Vector3 posHospital;
     
@@ -72,6 +75,9 @@ public class EventEnterLift : MonoBehaviour
         playerTransform.position = posMiddle;
         cameraTransform.position = posMiddle;
 
+        player.TurnMovement(false);
+        player.enabled = false;
+        
         yield return new WaitForSeconds(1f);
         
         // #3 Showing CoolBackground
@@ -97,6 +103,9 @@ public class EventEnterLift : MonoBehaviour
         
         stabilityUI.SetActive(true);
         inventoryUI.SetActive(true);
+
+        if(!goingToMain)
+            ShowDialogue();
         
         yield return new WaitForSeconds(3f);
         
@@ -112,6 +121,16 @@ public class EventEnterLift : MonoBehaviour
         // #6 Open lift2 door
         lift2Animator.Play("LiftOpen");
         
+        player.enabled = true;
+        player.TurnMovement(true);
+        
+        
         yield return null;
+    }
+
+    private void ShowDialogue()
+    {
+        dialogueParent.gameObject.SetActive(true);
+        Instantiate(dialoguePrefab, dialogueParent.transform);
     }
 }

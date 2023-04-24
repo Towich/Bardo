@@ -10,12 +10,17 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public CameraShake cameraShake;
     public PostGlitchEffect glitchEffect;
-
+    public GameObject deathScreen;
+    public FixedJoystick _joystick;
+    public bool mobile;
+    
     private GameManager gameManager;
     private Animator animator;
     private Vector2 direction;
     private Rigidbody2D rb;
     private int stability;
+
+    private AudioSource audioSource;
 
     private bool enabledMovement;
     
@@ -23,6 +28,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         InitVariables();
+        mobile = false;
     }
     
     private void InitVariables()
@@ -30,6 +36,7 @@ public class PlayerController : MonoBehaviour
         enabledMovement = true;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 
         stability = 100;
@@ -43,6 +50,12 @@ public class PlayerController : MonoBehaviour
         direction.x = Input.GetAxisRaw("Horizontal");
         direction.y = Input.GetAxisRaw("Vertical");
 
+        if (mobile)
+        {
+            direction.x = _joystick.Horizontal;
+            direction.y = _joystick.Vertical;
+        }
+
         // Setting the variables in Animator
         // used for playing animation of walk in right direction
         animator.SetFloat("Horizontal", direction.x);
@@ -53,7 +66,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         // moving player Up/Down/Left/Right
-        rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime); 
+        rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
     }
 
     public void TakeDecreaseStability(int delta, float duration, float magnitude)
@@ -69,6 +82,9 @@ public class PlayerController : MonoBehaviour
         stabilityText.text = stability.ToString();
         StartCoroutine(cameraShake.Shake(duration, magnitude));
         StartCoroutine(glitchEffect.SmoothTransition());
+
+        if (stability <= 0)
+            ShowDeathScreen();
     }
 
     public void TurnMovement(bool toEnable)
@@ -83,7 +99,10 @@ public class PlayerController : MonoBehaviour
             animator.Play("Idle");
             animator.enabled = toEnable;
         }
-        
-        
+    }
+
+    private void ShowDeathScreen()
+    {
+        deathScreen.SetActive(true);
     }
 }

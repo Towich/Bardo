@@ -468,9 +468,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 39
+        y: 55
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -585,90 +585,6 @@ TextureImporter:
       bones: []
       spriteID: f753576c9d7748f41bb1892a12576f14
       internalID: -1461442054
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_36
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 18
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f4172460e3e497429f76d35cfad5f59
-      internalID: 714991922
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_37
-      rect:
-        serializedVersion: 2
-        x: 161
-        y: 18
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae7c7953c51d5ce45a65ee8db1cf6b3e
-      internalID: -2140858056
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_38
-      rect:
-        serializedVersion: 2
-        x: 173
-        y: 18
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b6910ea0d045bb4980933fb3b213816
-      internalID: -1409686086
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samll_objects_1_39
-      rect:
-        serializedVersion: 2
-        x: 189
-        y: 18
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e451d9760c0499418146d654b4dd216
-      internalID: 1927177705
       vertices: []
       indices: 
       edges: []
@@ -795,6 +711,69 @@ TextureImporter:
       bones: []
       spriteID: ce9d89713f08ee341a2eaaef3e4ff5db
       internalID: 1344804979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: samll_objects_1_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 39
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a51446b52092e7a4abf2369c3ddba9ac
+      internalID: -579384146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: samll_objects_1_2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 18
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f40de7ae83e6e5241bb89bd05b0bac80
+      internalID: 1878901517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: samll_objects_1_3
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 19
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94565c4827725674a9cfc9934a310409
+      internalID: -1969109982
       vertices: []
       indices: 
       edges: []

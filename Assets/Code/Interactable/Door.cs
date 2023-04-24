@@ -2,7 +2,7 @@
 
 public class Door : MonoBehaviour, IInteractable
 {
-    [SerializeField] private string _prompt;
+    [SerializeField] public string _prompt;
     
     public string InteractionPrompt => _prompt;
     
@@ -18,6 +18,9 @@ public class Door : MonoBehaviour, IInteractable
     
     public bool Interact(Interactor interactor)
     {
+        if (InteractionPrompt.Equals("Closed"))
+            return false;
+        
         Debug.Log("Opening door!");
         anim.Play("OpenDoor");
         ShowHint(false);
@@ -30,4 +33,5 @@ public class Door : MonoBehaviour, IInteractable
         if(canvasHint != null)
             canvasHint.enabled = toShow;
     }
+    
 }

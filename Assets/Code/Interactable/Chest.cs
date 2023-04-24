@@ -5,6 +5,7 @@ using UnityEngine;
 public class Chest : MonoBehaviour, IInteractable
 {
     [SerializeField] private string _prompt;
+    public Sprite openedChestSprite;
     
     public string InteractionPrompt => _prompt;
     public GameObject prefabUI;
@@ -44,9 +45,11 @@ public class Chest : MonoBehaviour, IInteractable
 
         pl.TurnMovement(true);
         pl.enabled = true;
-        GetComponent<SpriteRenderer>().color = Color.green;
+        GetComponent<Animator>().enabled = false;
+        GetComponent<SpriteRenderer>().sprite = openedChestSprite;
         inventory.AddItem(prefabUI);    // adding item "RandomItem"
         inventory.RemoveItem(_prompt);  // removing item "Ключ-карта"
+
         ShowHint(false);
         Destroy(this);
     }

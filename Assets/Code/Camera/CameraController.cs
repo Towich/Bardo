@@ -40,11 +40,16 @@ public class CameraController : MonoBehaviour
     public void StopScaryCamera()
     {
         GetComponent<Animator>().enabled = false;
+
+        playerController.TakeDecreaseStability(0, .1f, 0.1f);
+        ShowDialogue();
         
-        playerController.enabled = true;
-        playerController.TurnMovement(true);
         
-        playerController.TakeDecreaseStability(10, 1f, 0.5f);
         gameManager.ScaryMomentSpawnEnemy();
+    }
+
+    private void ShowDialogue()
+    {
+        gameManager.StartCoroutine(gameManager.ShowScaryMomentUI());
     }
 }
