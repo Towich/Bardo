@@ -29,7 +29,7 @@ public class EndGame : MonoBehaviour
 
     public void ReloadGame()
     {
-        Time.timeScale = 0;
+        Time.timeScale = 1;
         SceneManager.LoadScene("Game");
     }
 }
