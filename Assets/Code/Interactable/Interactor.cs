@@ -45,7 +45,6 @@ public class Interactor : MonoBehaviour
         // getting component IInteractable of founded collider (for example: Chest/Door/DeadBody)
         var interactable = _colliders[0].GetComponent<IInteractable>(); 
         
-        // if co
         if (interactable != null)
         {
             interactable.ShowHint(true);
@@ -56,8 +55,23 @@ public class Interactor : MonoBehaviour
                 interactable.Interact(this);
             }
         }
+    }
+
+    public void InteractWithInteractable()
+    {
+        if (numFound == 0)
+            return;
         
+        // getting component IInteractable of founded collider (for example: Chest/Door/DeadBody)
+        var interactable = _colliders[0].GetComponent<IInteractable>(); 
         
+        if (interactable != null)
+        {
+            interactable.ShowHint(true);
+            showingHintCollider = interactable;
+            
+            interactable.Interact(this);
+        }
     }
 
     private void OnDrawGizmos()

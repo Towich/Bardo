@@ -28,7 +28,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         InitVariables();
-        mobile = false;
     }
     
     private void InitVariables()

@@ -6,6 +6,7 @@ public class MobileScript : MonoBehaviour
 {
    public PlayerController player;
    public GameObject joystick;
+   public GameObject buttonE;
    
    public void ChangeToMobile()
    {
@@ -16,6 +17,7 @@ public class MobileScript : MonoBehaviour
    public void Close()
    {
       Destroy(joystick);
+      Destroy(buttonE);
       Destroy(transform.parent.gameObject);
    }
 }
